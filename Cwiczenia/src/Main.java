@@ -18,9 +18,13 @@ void main() {
 
     System.out.println("Wielkie litery: " + napis.toUpperCase());
 
+<<<<<<< HEAD
     Scanner sc = new Scanner(System.in);
 
     System.out.println("Podaj wiek: ");
     int wiek = sc.nextInt();
+=======
+
+>>>>>>> fab6fd6bcdb7be9e2c73eec07e0202674206e768
 
 }
