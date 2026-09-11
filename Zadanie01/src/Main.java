@@ -52,5 +52,9 @@ void main() {
     String wyraz = sc7.next();
     int liczba_liter = wyraz.length();
     System.out.println("Wyraz jest "+liczba_liter+" literowy");
-    
+    //zad 8
+    double x = 5;
+    double y = 2;
+    double wynik1 = x / y;
+    System.out.println(wynik1);
 }
