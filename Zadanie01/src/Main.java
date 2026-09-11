@@ -63,5 +63,10 @@ void main() {
     System.out.println("Napisz  slowo: ");
     String slowo5 = sc8.next();
     System.out.println(slowo5.toUpperCase());
-    
+
+    //zad 10
+    Scanner sc9 = new Scanner(System.in);
+    System.out.println("Napisz  promien kola: ");
+    int promien = sc9.nextInt();
+    System.out.println("Pole koła wynosi: "+3.14*promien*promien);
 }
