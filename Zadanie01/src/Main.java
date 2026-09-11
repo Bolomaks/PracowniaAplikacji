@@ -21,5 +21,18 @@ void main() {
     Double stopnie = sc.nextDouble();
     Double Fahrenheit = stopnie*1.8+32.0;
     System.out.println("Jest "+Fahrenheit+" stopni fahrenheita");
-    
+
+    //Zad 5
+    Scanner sc1 = new Scanner(System.in);
+    System.out.println("Napisz pierwszy bok trójkąta: ");
+    Double bok1 = sc1.nextDouble();
+    Scanner sc2 = new Scanner(System.in);
+    System.out.println("Napisz Drugi bok trójkąta: ");
+    Double bok2 = sc2.nextDouble();
+    Scanner sc3 = new Scanner(System.in);
+    System.out.println("Napisz Trzeci bok trójkąta: ");
+    Double bok3 = sc3.nextDouble();
+    Double obwod = bok1+bok2+bok3;
+    System.out.println("Obwód trójkąta wynosi: "+obwod);
+
 }
