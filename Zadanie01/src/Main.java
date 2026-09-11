@@ -46,4 +46,11 @@ void main() {
     System.out.println("Napisz trzecie słowo: ");
     String slowo3 = sc6.next();
     System.out.println(slowo3+", "+slowo2+", "+slowo1);
+    //zad 7
+    Scanner sc7 = new Scanner(System.in);
+    System.out.println("Napisz wyraz: ");
+    String wyraz = sc7.next();
+    int liczba_liter = wyraz.length();
+    System.out.println("Wyraz jest "+liczba_liter+" literowy");
+    
 }
