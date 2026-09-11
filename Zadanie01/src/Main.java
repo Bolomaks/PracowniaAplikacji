@@ -57,4 +57,11 @@ void main() {
     double y = 2;
     double wynik1 = x / y;
     System.out.println(wynik1);
+
+    //zad 9
+    Scanner sc8 = new Scanner(System.in);
+    System.out.println("Napisz  slowo: ");
+    String slowo5 = sc8.next();
+    System.out.println(slowo5.toUpperCase());
+    
 }
