@@ -1,13 +1,21 @@
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
-    //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-    // to see how IntelliJ IDEA suggests fixing it.
-    IO.println(String.format("Hello and welcome!"));
+    // Zad1
+    System.out.println("Ania");
+    System.out.println("Bartek");
+    System.out.println("Kasia");
 
-    for (int i = 1; i <= 5; i++) {
-        //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-        // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        IO.println("i = " + i);
-    }
+    //zad 2
+    String imie = "Maks";
+    int rok = 2008;
+    double liczba = 0.66;
+    //zad 3
+    System.out.println("Mam na imię "+imie+", mam "+(2026-rok)+" lat  i będę pisać maturę za "+liczba+" roku.");
+    
+    //zad 4
+
+
 }
