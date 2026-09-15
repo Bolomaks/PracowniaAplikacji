@@ -39,9 +39,41 @@ void main() {
     System.out.println("Napisz druga liczbe: ");
     int liczba5 = sc5.nextInt();
 
-    if(liczba4 > liczba5){
+    if(liczba4 >= liczba5){
         System.out.println(liczba4 + " jest największa");
     }else{
         System.out.println(liczba5 + " jest największa");
     }
+
+    //zad 4
+    Scanner sc6 = new Scanner(System.in);
+    System.out.println("Napisz pierwsza liczbe: ");
+    int liczba6 = sc6.nextInt();
+    Scanner sc7 = new Scanner(System.in);
+    System.out.println("Napisz druga liczbe: ");
+    int liczba7 = sc7.nextInt();
+    Scanner sc8 = new Scanner(System.in);
+    System.out.println("Napisz trzecia liczbe: ");
+    int liczba8 = sc8.nextInt();
+
+    if(liczba6>=liczba7){
+        if(liczba6>=liczba8){
+            System.out.println(liczba6 + " jest największa");
+        }else{
+            System.out.println(liczba8 + " jest największa");
+        }
+    }else if(liczba7>=liczba6){
+        if(liczba7>=liczba8){
+            System.out.println(liczba7 + " jest największa");
+        }else{
+            System.out.println(liczba8 + " jest największa");
+        }
+    }else if(liczba8>=liczba6){
+        if(liczba8>=liczba7){
+            System.out.println(liczba8 + " jest największa");
+        }else{
+            System.out.println(liczba7 + " jest największa");
+        }
+    }
+
 }
