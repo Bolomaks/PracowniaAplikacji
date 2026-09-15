@@ -76,4 +76,37 @@ void main() {
         }
     }
 
+    //zad 5
+    Scanner sc9 = new Scanner(System.in);
+    System.out.println("Podaj numer miesiąca: ");
+    int miesiac = sc9.nextInt();
+
+    String poraRoku = switch (miesiac){
+        case 1:
+            yield "Styczeń";
+        case 2:
+            yield "Luty";
+        case 3:
+            yield "Marzec";
+        case 4:
+            yield "Kwiecień";
+        case 5:
+            yield "Maj";
+        case 6:
+            yield "Czerwiec";
+        case 7:
+            yield "Lipiec";
+        case 8:
+            yield "Sierpień";
+        case 9:
+            yield "Wrzesień";
+        case 10:
+            yield "Październik";
+        case 11:
+            yield "Listopad";
+        case 12:
+            yield "Grudzień";
+        default:
+            yield "Nieprawidłowy numer miesiąca"
+    }
 }
