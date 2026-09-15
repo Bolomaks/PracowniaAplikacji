@@ -30,4 +30,18 @@ void main() {
     }else{
         System.out.println("Nie da sie zrobic trójkąta");
     }
+
+    //zad 3
+    Scanner sc4 = new Scanner(System.in);
+    System.out.println("Napisz pierwsza liczbe: ");
+    int liczba4 = sc4.nextInt();
+    Scanner sc5 = new Scanner(System.in);
+    System.out.println("Napisz druga liczbe: ");
+    int liczba5 = sc5.nextInt();
+
+    if(liczba4 > liczba5){
+        System.out.println(liczba4 + " jest największa");
+    }else{
+        System.out.println(liczba5 + " jest największa");
+    }
 }
