@@ -110,4 +110,17 @@ void main() {
             yield "Nieprawidłowy numer miesiąca";
     };
     System.out.println(poraRoku);
+
+    //zad 6
+    Scanner sc10 = new Scanner(System.in);
+    System.out.println("Podaj Imie: ");
+    String imie = sc10.next();
+
+    if(imie.equals("Maks")){
+        System.out.println("Mamy takie samo imie");
+    }else {
+        System.out.println("Mamy inne imiona");
+    }
+
+
 }
