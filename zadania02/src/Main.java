@@ -107,6 +107,7 @@ void main() {
         case 12:
             yield "Grudzień";
         default:
-            yield "Nieprawidłowy numer miesiąca"
-    }
+            yield "Nieprawidłowy numer miesiąca";
+    };
+    System.out.println(poraRoku);
 }
