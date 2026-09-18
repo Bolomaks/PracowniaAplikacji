@@ -162,6 +162,62 @@ void main() {
     }
 
     //zad 10
+    System.out.println("Podaj cene towaru: ");
+    double cenaTowaru = sc13.nextDouble();
+    System.out.println("Podaj liczbe rat: ");
+    int raty = sc13.nextInt();
+
+    double oprocentowanie;
+    if(cenaTowaru<100){
+        System.out.println("Podaj cene towaru wieksza od 100: ");
+    }else if(cenaTowaru>10000){
+        System.out.println("Podaj cene towaru mniejsza od 10000: ");
+    }
+
+        if(raty<6){
+            System.out.println("Podaj liczbe rat wieksza od 6: ");
+        }else if(raty >48){
+            System.out.println("Podaj liczbe rat mniejsza od 48: ");
+        }else{
+            if(raty>=6 && raty <=12){
+                System.out.println("Rata na miesiac wynosi: "+(cenaTowaru + cenaTowaru*0.025)/raty);
+            }else if(raty>=13 && raty<=24){
+                System.out.println("Rata na miesiac wynosi: "+(cenaTowaru + cenaTowaru*0.05)/raty);
+            }else if(raty>=25 && raty<=48){
+                System.out.println("Rata na miesiac wynosi: "+(cenaTowaru + cenaTowaru*0.1)/raty);
+            }
+        }
+
+
+
+
+
+    //zad 11
+    System.out.println("To jest prosty kalkulator, wykonuje on operacje dodawania, odejmowania, mnożenia i dzielenia dwóch liczb rzeczywistych Podaj pierwsza liczbę: ");
+    double PierwszaLiczba = sc13.nextDouble();
+    System.out.println("Podaj symbol operacji arytmetycznej: ");
+    String Symbol = sc13.next();
+    System.out.println("Podaj drugą liczbę: ");
+    double DrugaLiczba = sc13.nextDouble();
+
+    if (Symbol.equals("/")) {
+        if (DrugaLiczba == 0) {
+            System.out.println("Nie dzielimy przez 0");
+        } else {
+            System.out.println("Wynik to: " + (PierwszaLiczba / DrugaLiczba));
+        }
+    }else if(Symbol.equals("*")){
+            System.out.println("Wynik to: "+(PierwszaLiczba*DrugaLiczba));
+        }else if(Symbol.equals("-")){
+        System.out.println("Wynik to: "+(PierwszaLiczba-DrugaLiczba));
+    }else if(Symbol.equals("+")){
+        System.out.println("Wynik to: "+(PierwszaLiczba+DrugaLiczba));
+    }else{
+        System.out.println("Niepoprawny symbol");
+    }
+
+
+
 
 
 }
