@@ -122,5 +122,46 @@ void main() {
         System.out.println("Mamy inne imiona");
     }
 
+    //zad 7
+    Scanner sc11 = new Scanner(System.in);
+    System.out.println("Podaj Wiek: ");
+    int wiek = sc11.nextInt();
+
+    boolean pelnoletni = wiek >=18 ? true : false;
+
+    System.out.println("Czy jest pełnoletni: "+pelnoletni);
+
+
+//zad 8
+    Scanner sc12 = new Scanner(System.in);
+    System.out.println("Podaj rok: ");
+    int rok = sc12.nextInt();
+
+    boolean przestepny = rok % 400 == 0;
+    if(przestepny == true){
+        System.out.println("Rok jest przestepny");
+    }else{
+        System.out.println("Rok nie jest przestepny");
+    }
+    // zad 9
+    Scanner sc13 = new Scanner(System.in);
+    System.out.println("Podaj wage: ");
+    double waga = sc13.nextDouble();
+
+    System.out.println("Podaj wzrost: ");
+    double wzrost = sc13.nextDouble();
+
+    double BMI = waga/(wzrost*wzrost);
+
+    if(BMI>=18.5 && BMI<=24.9){
+        System.out.println("Waga prawidłowa");
+    }else if(BMI<18.5){
+        System.out.println("Niedowaga");
+    }else if(BMI>24.9){
+        System.out.println("Nadwaga");
+    }
+
+    //zad 10
+
 
 }
