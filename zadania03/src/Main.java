@@ -29,5 +29,45 @@ void main() {
         System.out.println("Jeszcze raz");
         liczba1 = sc.nextInt();
     }
-    
-}
+
+    //zad 4
+    int i2 = 0;
+    int min = 0;
+    int max = 0;
+
+
+    System.out.println("Podaj ciąg liczb całkowitych: ");
+    int ciag = sc.nextInt();
+
+
+    if(ciag!=0){
+        min = ciag;
+        max = ciag;
+    }
+    while (ciag != 0) {
+
+        i2++;
+        if (ciag < min) {
+            min = ciag;
+        }
+
+        if (ciag > max) {
+            max = ciag;
+        }
+
+        System.out.println("Podaj ciag liczb calkowitych: ");
+        ciag = sc.nextInt();
+    }
+        if (i2 > 0) {
+            int suma1 = min + max;
+            double srednia = (double) suma1 / 2;
+
+            System.out.println("Najmniejsza liczba: " + min);
+            System.out.println("Najwieksza liczba: " + max);
+            System.out.println("Suma najwiekszej i najmniejszej: " + suma1);
+            System.out.println("Srednia najwiekszej i najmniejszej: " + srednia);
+        } else {
+            System.out.println("Nie podano zadnych liczb");
+        }
+    }
+
