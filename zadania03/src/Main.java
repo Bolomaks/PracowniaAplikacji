@@ -12,4 +12,15 @@ while(i<=liczba){
     i+=2;
 }
 
+//zad 2
+    System.out.println("Podaj liczbe całkowitą dodatnia n: ");
+    int n = sc.nextInt();
+    int i1 = 0;
+    int wynik = 2;
+    while(wynik<n){
+        System.out.println(wynik);
+        wynik *= 2;
+        i1++;
+    }
+
 }
