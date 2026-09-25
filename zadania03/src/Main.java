@@ -1,3 +1,7 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.sql.SQLOutput;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
@@ -40,7 +44,7 @@ void main() {
     int ciag = sc.nextInt();
 
 
-    if(ciag!=0){
+    if (ciag != 0) {
         min = ciag;
         max = ciag;
     }
@@ -58,16 +62,42 @@ void main() {
         System.out.println("Podaj ciag liczb calkowitych: ");
         ciag = sc.nextInt();
     }
-        if (i2 > 0) {
-            int suma1 = min + max;
-            double srednia = (double) suma1 / 2;
+    if (i2 > 0) {
+        int suma1 = min + max;
+        double srednia = (double) suma1 / 2;
 
-            System.out.println("Najmniejsza liczba: " + min);
-            System.out.println("Najwieksza liczba: " + max);
-            System.out.println("Suma najwiekszej i najmniejszej: " + suma1);
-            System.out.println("Srednia najwiekszej i najmniejszej: " + srednia);
-        } else {
-            System.out.println("Nie podano zadnych liczb");
-        }
+        System.out.println("Najmniejsza liczba: " + min);
+        System.out.println("Najwieksza liczba: " + max);
+        System.out.println("Suma najwiekszej i najmniejszej: " + suma1);
+        System.out.println("Srednia najwiekszej i najmniejszej: " + srednia);
+    } else {
+        System.out.println("Nie podano zadnych liczb");
     }
+
+
+// Zad 5
+    Random generator = new Random();
+    int losowaliczba = generator.nextInt(100) + 1;
+
+    System.out.println("Zgadnij liczbe od 1 do 100: ");
+    int zgadnij = sc.nextInt();
+
+while(zgadnij!=losowaliczba) {
+    if (losowaliczba < zgadnij) {
+        System.out.println("Podałeś za dużą wartość");
+        zgadnij = sc.nextInt();
+    } else if (losowaliczba > zgadnij) {
+        System.out.println("Podałeś za małą wartość");
+        zgadnij = sc.nextInt();
+    }
+}
+    System.out.println("Gratulacje!");
+
+
+
+}
+
+
+
+
 
