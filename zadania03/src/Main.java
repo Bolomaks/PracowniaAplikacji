@@ -133,7 +133,26 @@ void main() {
         }
     }
 
-    //zad 6
+    //zad 7
+    System.out.println("Podaj liczbe calkowita n(wysokosc choinki): ");
+    int n1 = sc.nextInt();
+    if(n1>0){
+        for(int i1 = 0;i1<n1;i1++ ){
+            for(int i3 = 0;i3<n1;i3++){
+                System.out.print(" ");
+            }
+            for(int i4 = 0;i4<(2*i1+1);i4++){
+                System.out.print(" *");
+            }
+            System.out.println();
+        }
+    }else{
+        System.out.println("Wysokość musi byc wieksza od 0");
+    }
+
+
+
+
 }
 
 
