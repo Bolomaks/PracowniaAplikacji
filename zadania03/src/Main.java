@@ -82,22 +82,58 @@ void main() {
     System.out.println("Zgadnij liczbe od 1 do 100: ");
     int zgadnij = sc.nextInt();
 
-while(zgadnij!=losowaliczba) {
-    if (losowaliczba < zgadnij) {
-        System.out.println("Podałeś za dużą wartość");
-        zgadnij = sc.nextInt();
-    } else if (losowaliczba > zgadnij) {
-        System.out.println("Podałeś za małą wartość");
-        zgadnij = sc.nextInt();
+    while (zgadnij != losowaliczba) {
+        if (losowaliczba < zgadnij) {
+            System.out.println("Podałeś za dużą wartość");
+            zgadnij = sc.nextInt();
+        } else if (losowaliczba > zgadnij) {
+            System.out.println("Podałeś za małą wartość");
+            zgadnij = sc.nextInt();
+        }
     }
-}
     System.out.println("Gratulacje!");
 
+//zad 6
+
+    System.out.println("Podaj znak wypełnienia prostokąta");
+    String zn = sc.next();
+    System.out.println("Podaj pozycje lewego górnego rogu prostokąta x: ");
+    int x = sc.nextInt();
+    System.out.println("Podaj pozycje lewego górnego prostokąta y: ");
+    int y = sc.nextInt();
+    System.out.println("Podaj długość boków prostokąta a: ");
+    int a = sc.nextInt();
+    System.out.println("Podaj długość boków prostokąta b: ");
+    int b = sc.nextInt();
 
 
+
+    if (a <= 0 || b <= 0 || x < 1 || y < 1) {
+        System.out.println("Wymiary muszą być większe od 0, a współrzędne >= 1.");
+    } else {
+
+        for (int y1 = 1; y1 < y; y1++) {
+            System.out.println();
+        }
+
+
+        for (int b1 = 0; b1 < b; b1++) {
+
+            for (int x1 = 1; x1 < x; x1++) {
+                System.out.print(" ");
+            }
+
+
+            for (int a1 = 0; a1 < a; a1++) {
+                System.out.print(zn);
+            }
+
+
+            System.out.println();
+        }
+    }
+
+    //zad 6
 }
-
-
-
 
 
