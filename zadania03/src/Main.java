@@ -163,7 +163,22 @@ int wynik1 = 1;
         System.out.println("Silnia wynosi: "+wynik1);
     }
 
+//zad 9
+    System.out.print("Napisz słowo: ");
+    String slowo = sc.next();
 
+
+    String zwykle = slowo.toLowerCase();
+
+
+    String odwrocone = new StringBuilder(zwykle).reverse().toString();
+
+
+    if (zwykle.equals(odwrocone)) {
+        System.out.println("To słowo to palindrom");
+    } else {
+        System.out.println("To słowo to nie palindrom");
+    }
 
 }
 
