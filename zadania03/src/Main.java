@@ -1,7 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
-
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 void main() {
@@ -107,7 +103,6 @@ void main() {
     int b = sc.nextInt();
 
 
-
     if (a <= 0 || b <= 0 || x < 1 || y < 1) {
         System.out.println("Wymiary muszą być większe od 0, a współrzędne >= 1.");
     } else {
@@ -136,31 +131,31 @@ void main() {
     //zad 7
     System.out.println("Podaj liczbe calkowita n(wysokosc choinki): ");
     int n1 = sc.nextInt();
-    if(n1>0){
-        for(int i1 = 0;i1<n1;i1++ ){
-            for(int i3 = 0;i3<n1;i3++){
+    if (n1 > 0) {
+        for (int i1 = 0; i1 < n1; i1++) {
+            for (int i3 = 0; i3 < n1; i3++) {
                 System.out.print(" ");
             }
-            for(int i4 = 0;i4<(2*i1+1);i4++){
+            for (int i4 = 0; i4 < (2 * i1 + 1); i4++) {
                 System.out.print(" *");
             }
             System.out.println();
         }
-    }else{
+    } else {
         System.out.println("Wysokość musi byc wieksza od 0");
     }
 //zad 8
     System.out.println("Podaj liczbe zeby policzyc silnie: ");
     int silnia = sc.nextInt();
-int wynik1 = 1;
-    if(silnia==0){
+    int wynik1 = 1;
+    if (silnia == 0) {
         System.out.println("Silnia wynosi 1");
-    }else{
-    for(int i7 = 1; i7<=silnia; i7++) {
-    wynik1 *=i7;
+    } else {
+        for (int i7 = 1; i7 <= silnia; i7++) {
+            wynik1 *= i7;
 
-    }
-        System.out.println("Silnia wynosi: "+wynik1);
+        }
+        System.out.println("Silnia wynosi: " + wynik1);
     }
 
 //zad 9
@@ -179,7 +174,6 @@ int wynik1 = 1;
     } else {
         System.out.println("To słowo to nie palindrom");
     }
-
 }
 
 
