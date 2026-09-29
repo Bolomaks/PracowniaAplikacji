@@ -149,7 +149,19 @@ void main() {
     }else{
         System.out.println("Wysokość musi byc wieksza od 0");
     }
+//zad 8
+    System.out.println("Podaj liczbe zeby policzyc silnie: ");
+    int silnia = sc.nextInt();
+int wynik1 = 1;
+    if(silnia==0){
+        System.out.println("Silnia wynosi 1");
+    }else{
+    for(int i7 = 1; i7<=silnia; i7++) {
+    wynik1 *=i7;
 
+    }
+        System.out.println("Silnia wynosi: "+wynik1);
+    }
 
 
 
