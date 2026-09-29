@@ -26,6 +26,7 @@ void main() {
     }
     System.out.println("Najwieksza komorka to: "+najwieksza);
 
+//zad 3
 
 
 

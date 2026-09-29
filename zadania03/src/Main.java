@@ -174,6 +174,19 @@ void main() {
     } else {
         System.out.println("To słowo to nie palindrom");
     }
+    //zad 10
+    petlaglowna:
+    for(int i9 = 1;i9<=10; i9++){
+        if(i9%2!=0){
+            continue;
+        }
+        for(int j9=1;j9<=10;j9++){
+            System.out.println(j9);
+            if(j9>i9){
+                continue petlaglowna;
+            }
+        }
+    }
 }
 
 
