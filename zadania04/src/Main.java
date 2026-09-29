@@ -14,4 +14,20 @@ void main() {
         tablica2[i1] = i1*2+1;
         System.out.println("Kolejna komorka to: "+tablica2[i1]);
     }
+    //zad 2
+    int najwieksza = 1;
+    int[] tablica3 = new int[10];
+    for(int i2 = 0;i2<tablica3.length; i2++){
+        tablica3[i2] = i2*5;
+        if(najwieksza<tablica3[i2]){
+            najwieksza=tablica3[i2];
+        }
+
+    }
+    System.out.println("Najwieksza komorka to: "+najwieksza);
+
+
+
+
+
 }
