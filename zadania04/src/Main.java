@@ -148,7 +148,27 @@ void main() {
     System.out.println();
 
 //zad 9
+    int[] tablica7 = new int[20];
 
-    
+    for (int i10 = 0; i10 < tablica7.length; i10++) {
+        tablica7[i10] = random.nextInt(10) + 1;
+    }
+
+    System.out.print("Wygenerowana tablica: ");
+    for (int n4 : tablica7) {
+        System.out.print(n4 + " ");
+    }
+    System.out.println();
+
+
+    int[] zliczenia = new int[11];
+    for (int n5 : tablica7) {
+        zliczenia[n5]++;
+    }
+
+
+    for (int i11 = 1; i11 <= 10; i11++) {
+        System.out.println("Liczba " + i11 + " powtarza się " + zliczenia[i11] + " razy.");
+    }
 
 }
