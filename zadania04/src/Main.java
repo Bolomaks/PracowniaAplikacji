@@ -85,7 +85,19 @@ void main() {
         }
         System.out.println("Silnia z " + l + " wynosi: " + silnia);
     }
-    
+
+    //zad 7
+    String[] tablica4 = {"kot", "pies", "chomik"};
+    String[] tablica5 = {"kot", "pies", "chomik"};
+
+    boolean takiesame = Arrays.equals(tablica4, tablica5);
+
+    if(takiesame){
+        System.out.println("Tablice są takie same");
+    }else{
+        System.out.println("Tablice nie są takie same");
+    }
 
 
+    //zad 8
 }
