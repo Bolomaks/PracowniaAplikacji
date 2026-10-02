@@ -57,19 +57,35 @@ void main() {
     int[] liczby = new int[8];
 
     System.out.println("Podaj 8 liczb:");
-    for (int i = 0; i < 8; i++) {
-        liczby[i] = sc.nextInt();
+    for (int i5 = 0; i5 < 8; i5++) {
+        liczby[i5] = sc.nextInt();
     }
 
     Arrays.sort(liczby);
 
     System.out.println("Posortowane liczby:");
-    for (int i = 0; i < liczby.length; i++) {
-        System.out.print(liczby[i] + (i < liczby.length - 1 ? ", " : ""));
+    for (int i6 = 0; i6 < liczby.length; i6++) {
+        System.out.print(liczby[i6] + (i6 < liczby.length - 1 ? ", " : ""));
     }
     System.out.println();
 
+//zad 6
 
+    int[] liczby3 = new int[5];
+
+    System.out.println("Podaj 5 liczb:");
+    for (int i7 = 0; i7 < 5; i7++) {
+        liczby3[i7] = sc.nextInt();
+    }
+
+    for (int l : liczby3) {
+        long silnia = 1;
+        for (int i8 = 1; i8 <= l; i8++) {
+            silnia *= i8;
+        }
+        System.out.println("Silnia z " + l + " wynosi: " + silnia);
+    }
+    
 
 
 }
