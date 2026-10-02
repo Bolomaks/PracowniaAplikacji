@@ -100,4 +100,55 @@ void main() {
 
 
     //zad 8
+
+    int[] tablica6 = new int[10];
+    Random random = new Random();
+
+
+    for (int i8 = 0; i8 < tablica6.length; i8++) {
+        tablica6[i8] = random.nextInt(21) - 10;
+    }
+
+    System.out.println("Tablica: ");
+   for(int n : tablica6){
+       System.out.print(n + " ");
+   }
+    System.out.println();
+
+    int min = tablica6[0];
+    int max = tablica6[0];
+    int suma = 0;
+
+    for (int n1 : tablica6) {
+        if (n1 < min) min = n1;
+        if (n1 > max) max = n1;
+        suma += n1;
+    }
+
+    double srednia = (double) suma/ tablica6.length;
+
+
+    int mniejsze = 0;
+    int wieksze = 0;
+    for (int n2 : tablica6) {
+        if (n2 < srednia) mniejsze++;
+        if (n2 > srednia) wieksze++;
+    }
+
+    System.out.println("Najmniejszy element: " + min);
+    System.out.println("Największy element: " + max);
+    System.out.println("Średnia arytmetyczna: " + srednia);
+    System.out.println("Elementów mniejszych od średniej: " + mniejsze);
+    System.out.println("Elementów większych od średniej: " + wieksze);
+
+    System.out.print("Tablica w odwrotnej kolejności: ");
+    for (int i9 = tablica6.length - 1; i9 >= 0; i9--) {
+        System.out.print(tablica6[i9] + " ");
+    }
+    System.out.println();
+
+//zad 9
+
+    
+
 }
