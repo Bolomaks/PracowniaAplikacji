@@ -9,7 +9,7 @@ void main() {
     imie();
 
     //zad 3
-    System.out.println("Działania: "+dzialania(6,2));
+    dzialania(6,2);
 }
 
 public int wiek(){
@@ -18,7 +18,8 @@ public int wiek(){
 public void imie(){
     System.out.println("Maks");
 }
-public int dzialania(int a,int b){
-    int suma = a+b;
-    return suma;
+public void dzialania(int a,int b){
+    System.out.println("Suma: "+(a+b));
+    System.out.println("Różnica: "+(a-b));
+    System.out.println("Iloczyn: "+(a*b));
 }
