@@ -174,7 +174,7 @@ void main() {
     } else {
         System.out.println("To słowo to nie palindrom");
     }
-    //zad 10
+    //zad 10 zrobione wsystkie
     petlaglowna:
     for(int i9 = 1;i9<=10; i9++){
         if(i9%2!=0){
