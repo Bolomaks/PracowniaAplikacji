@@ -21,6 +21,10 @@ void main() {
     System.out.println("Liczba podniesiona do potegi 3: "+liczba2(4));
 
     //zad 7
+    System.out.println("Pierwiastek liczby to: "+liczba3(4));
+
+    //zad 8
+    
 }
 
 public int wiek(){
@@ -47,4 +51,7 @@ public void liczba1(int a2){
 }
 public int liczba2(int a3){
     return a3*a3*a3;
+}
+public double liczba3(int a4){
+    return Math.sqrt(a4);
 }
