@@ -16,6 +16,11 @@ void main() {
 
     //zad 5
     liczba1(15);
+
+    //zad 6
+    System.out.println("Liczba podniesiona do potegi 3: "+liczba2(4));
+
+    //zad 7
 }
 
 public int wiek(){
@@ -39,4 +44,7 @@ public void liczba1(int a2){
     if(a2%3==0 && a2%5==0){
         System.out.println("true");
     }
+}
+public int liczba2(int a3){
+    return a3*a3*a3;
 }
