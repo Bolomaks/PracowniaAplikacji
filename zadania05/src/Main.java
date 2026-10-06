@@ -10,6 +10,11 @@ void main() {
 
     //zad 3
     dzialania(6,2);
+
+    //zad 4
+    liczba(2);
+
+    //zad 5
 }
 
 public int wiek(){
@@ -22,4 +27,15 @@ public void dzialania(int a,int b){
     System.out.println("Suma: "+(a+b));
     System.out.println("Różnica: "+(a-b));
     System.out.println("Iloczyn: "+(a*b));
+}
+
+public void liczba(int a1){
+    if(a1%2==0) {
+        System.out.println("true");;
+    }
+}
+public void liczba1(int a2){
+    if(a2%3==0 && a2%5==0){
+        System.out.println("True");
+    }
 }
