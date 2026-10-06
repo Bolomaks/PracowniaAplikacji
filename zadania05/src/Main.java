@@ -24,7 +24,7 @@ void main() {
     System.out.println("Pierwiastek liczby to: "+liczba3(4));
 
     //zad 8
-    
+    liczby2(3,4,5);
 }
 
 public int wiek(){
@@ -54,4 +54,51 @@ public int liczba2(int a3){
 }
 public double liczba3(int a4){
     return Math.sqrt(a4);
+}
+public void liczby2(int c, int d, int e){
+
+    if(c>=d){
+        if(c>=e){
+            if((d*d)+(e*e)==c*c){
+                System.out.println("Mozna zbudowac trójkąt prostokątny");
+            }else{
+                System.out.println("Nie mozna zbudowac trójkąta prostokątnego");
+            }
+
+        }else if(e>=c){
+            if((d*d)+(c*c)==e*e){
+                System.out.println("Mozna zbudowac trójkąt prostokątny");
+            }else{
+                System.out.println("Nie mozna zbudowac trójkąta prostokątnego");
+            }
+        }
+    }else if(d>=c){
+        if(d>=e){
+            if((c*c)+(e*e)==d*d){
+                System.out.println("Mozna zbudowac trójkąt prostokątny");
+            }else{
+                System.out.println("Nie mozna zbudowac trójkąta prostokątnego");
+            }
+        }else if(e>=d){
+            if((d*d)+(c*c)==e*e){
+                System.out.println("Mozna zbudowac trójkąt prostokątny");
+            }else{
+                System.out.println("Nie mozna zbudowac trójkąta prostokątnego");
+            }
+        }
+    }else if(e>=d){
+        if(e>=c){
+            if((d*d)+(c*c)==e*e){
+                System.out.println("Mozna zbudowac trójkąt prostokątny");
+            }else{
+                System.out.println("Nie mozna zbudowac trójkąta prostokątnego");
+            }
+        }else if(c>=e){
+            if((d*d)+(e*e)==c*c){
+                System.out.println("Mozna zbudowac trójkąt prostokątny");
+            }else{
+                System.out.println("Nie mozna zbudowac trójkąta prostokątnego");
+            }
+        }
+    }
 }
