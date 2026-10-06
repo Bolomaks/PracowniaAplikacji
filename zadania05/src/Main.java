@@ -15,6 +15,7 @@ void main() {
     liczba(2);
 
     //zad 5
+    liczba1(15);
 }
 
 public int wiek(){
@@ -36,6 +37,6 @@ public void liczba(int a1){
 }
 public void liczba1(int a2){
     if(a2%3==0 && a2%5==0){
-        System.out.println("True");
+        System.out.println("true");
     }
 }
